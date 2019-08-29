@@ -1,5 +1,5 @@
 1. Install docker and to verify docker has been installed successfully,use --> docker --version
-2. Create Dockerfile --> cd myimages/
+2. Create Dockerfile --> cd myimages/ \
                          vi Dockerfile 
 3. Create a Web Page to Serve on Nginx --> mkdir -p ~/docker-nginx/html \
                                            vi index.html \
@@ -10,7 +10,7 @@
   -d is for daemon mode i.e. It is used to run the container in detached mode.So that the container can run in the background.)
 6. docker volume create my-vol --> To create volume
 7. docker run -d --name=nginxtest -v nginx-vol:/usr/share/nginx/html nginx:latest --> To mount a particular directory in host machine as a volume in nginx container.
-8. curl http://localhost:8080/ --> To access the nginx container on console
+8. curl http://localhost:8080/ --> To access the nginx container on console \
    http://instance-ip:8080/ --> To access the nginx container in web browser
 9. Other useful commands: \
    sudo docker images  --> To check the images that has been created \
